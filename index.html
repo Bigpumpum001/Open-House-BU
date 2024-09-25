@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU Iti Open House 2024</title>
+    <link rel="icon" href="bu-title-icon.ico" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font pattaya -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <!-- font pridi -->
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Pridi:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        #container-footer {
+            margin-top: 10rem;
+        }
+
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nav-item .nav-link,
+        .nav-item .nav-link.active {
+            font-size: 1.5rem;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+
+            font-weight: 400;
+            line-height: 24px;
+            width: 120px;
+            transition: 0.7s ease;
+        }
+
+        #footer {
+            font-family: "Bebas Neue", sans-serif;
+            ;
+        }
+
+        .nav-item .nav-link:hover {
+            font-size: 1.7rem;
+            transform: translateY(-0px) scale(1.2);
+            color: rgb(247, 152, 17);
+        }
+
+        .nav-item .nav-link:active {
+            color: rgb(197, 129, 236);
+            font-size: 1.7rem;
+            transition: 0.2s ease;
+            transform: translateY(-0px) scale(1.2);
+        }
+
+        .navbar-brand img {
+            width: 70%;
+        }
+
+        #container-footer {
+            margin-top: 0rem;
+            background-color: rgb(247, 152, 17);
+        }
+
+        #container-footer p {
+            margin-top: 0rem;
+            font-size: 1.5rem;
+        }
+
+        .hero-section {
+            height: 110vh;
+            padding-top: 2rem;
+            width: auto;
+
+        }
+
+       
+
+        .hero2 {
+            height: 110vh;
+        }
+
+        .hero-section {
+         
+            background-position: center;
+        
+        }
+
+        .img-fluid {
+            height: 110vh;
+            width: 100vw;
+        }
+
+
+        .bounce-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+
+        }
+
+        .bounce-container span {
+            display: inline-block;
+            animation: bounce 1.5s;
+            animation-fill-mode: both;
+
+        }
+
+        .performance-highlight .bounce-container span:hover {
+            animation: bounce 0.5s infinite;
+            font-size: 62px;
+            color: rgb(247, 152, 17);
+
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(360deg);
+            }
+        }
+
+        .bounce-container span:nth-child(1) {
+            animation-delay: 2s;
+        }
+
+        .bounce-container span:nth-child(2) {
+            animation-delay: 2.2s;
+        }
+
+        .bounce-container span:nth-child(3) {
+            animation-delay: 2.4s;
+        }
+
+        .bounce-container span:nth-child(4) {
+            animation-delay: 2.6s;
+        }
+
+        .bounce-container span:nth-child(5) {
+            animation-delay: 2.8s;
+        }
+
+        .bounce-container span:nth-child(6) {
+            animation-delay: 3s;
+        }
+
+        .bounce-container span:nth-child(7) {
+            animation-delay: 3.2s;
+        }
+
+        .bounce-container span:nth-child(8) {
+            animation-delay: 3.4s;
+        }
+
+        .bounce-container span:nth-child(9) {
+            animation-delay: 3.6s;
+        }
+
+        .bounce-container span:nth-child(10) {
+            animation-delay: 3.8s;
+        }
+
+        .bounce-container span:nth-child(11) {
+            animation-delay: 4s;
+        }
+
+        .performance-highlight .bounce-container {
+            font-size: 3rem;
+            color: black;
+            font-family: "Bebas Neue", sans-serif;
+
+            font-weight: 600;
+            line-height: 24px;
+            width: 100%;
+            margin-right: 6rem;
+            margin-top: 3rem;
+            position: absolute;
+            top: 1%;
+            left: 3%;
+        }
+
+        #highlight_header {
+            width: 130%;
+            margin-top: 1rem;
+        }
+
+        .performance-highlight {
+            position: relative;
+            display: inline-block;
+        }
+
+        .shake {
+            display: inline-block;
+            animation: shake 2.5s infinite;
+        }
+
+        .card {
+            max-height: 40vh;
+            height: 35vh;
+            
+
+        }
+
+        .card h5 {
+
+            font-size: 1.5rem;
+            font-family: "Pattaya", sans-serif;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .modal-content {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .modal-img {
+            flex: 1;
+            margin: 15px;
+        }
+
+        .modal-img img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: rgb(0, 0, 0);
+        }
+
+        .modal-header h5 {
+            font-size: 1.7rem;
+            font-family: "Pattaya", sans-serif;
+        }
+
+        .modal-body p {
+
+            font-family: "Pridi", serif;
+        }
+
+
+        .modal-header {
+            position: relative;
+        }
+
+        .btn-close {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+
+        .col-md-2 {
+            width: 20%;
+        }
+
+        .card:hover {
+            transform: translate(-2px, -20px) rotate(0deg) scale(1.1);
+            transition: 0.5s ease;
+            box-shadow: 0 0 1rem rgb(55, 188, 236);
+            border: 1px solid rgb(55, 188, 236);
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-2px, -20px) rotate(5deg) scale(1.2);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        /* page4 - speaker */
+        .speaker-img img {
+            width: 100%;
+            border-radius: 2rem;
+        }
+
+        .speaker-img img:hover {
+            transform: translateY(-0%) scale(1.1);
+            box-shadow: 0 0 1rem rgb(55, 188, 236);
+            transition: 0.5s ease;
+            border: 1px solid rgb(55, 188, 236);
+        }
+
+        .speaker-header {
+            margin-bottom: 2rem;
+        }
+
+        .speaker-container {
+            gap: 100px;
+        }
+        .about-container{
+            margin-top: 1rem;
+        }
+        .about-detail,
+        .speaker-detail h3,
+        .speaker-detail h1 {
+
+            font-family: "Pridi", serif;
+        }
+
+        .about-detail h3 {
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .speaker-detail h1,
+        .about-detail h1 {
+            padding-bottom: 3rem;
+            color: rgb(247, 152, 17);
+            font-size: 58px;
+        }
+
+        /* page5 */
+        .section-title {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #schedule-header {
+            font-size: 60px;
+        }
+
+        #toTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            padding: 10px;
+            border-radius: 3rem;
+            cursor: pointer;
+            font-size: 30px;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        #toTopBtn:hover {
+            background-color: rgb(129, 207, 236);
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        #toTopBtn i {
+            transform: translateY(-25%);
+            background-color: none;
+            font-size: 30px;
+            color: black;
+        }
+
+        .table th,
+        .table td {
+            font-family: "Pridi", sans-serif;
+        }
+
+        @media (max-width: 1399px) {
+            .speaker-img img {
+                transform: translateY(15%);
+                /* width: 130%; */
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .card {
+                width: 110%;
+                height: 30vh;
+            }
+
+            .speaker-img img {
+                transform: translateY(40%);
+                /* width: 130%; */
+            }
+        }
+
+        @media (max-width: 991px) {
+            .schedule-container {
+                transform: translateY(10%);
+            }
+             #About{
+                height: 200vh;
+             }
+           
+            .speaker-container-bounce{
+                transform: translateY(30%);
+            }
+            .speaker-img img {
+                transform: translateY(60%);
+                /* width: 130%; */
+            }
+
+            .speaker-detail h1 {
+                font-size: 30px;
+            }
+
+            .speaker-detail h3 {
+                font-size: 25px;
+            }
+
+            .card {
+                width: 130%;
+                height: 45vh;
+            }
+
+            .img-fluid {
+                width: 120%;
+
+            }
+            .workshop-container-all{
+                transform: translateY(70%);
+            }
+            #Workshop{
+                height: 170vh;
+            }
+            .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* เปลี่ยนสีเส้นของ hamburger icon เป็นสีขาว */
+}
+            
+        }
+        @media (max-width: 767px) {
+                .speaker-img img {
+                    transform: translateY(60%);
+                    width: 130%;
+                }
+                .speaker-detail h1 {
+                font-size: 25px;
+            }
+
+            .speaker-detail h3 {
+                font-size: 20px;
+            }
+            .card{
+                width: 80%;
+                margin-bottom: 10px;
+             
+                max-height: 100vh;
+                height: 50vh;
+               
+                
+                
+            }
+            #Workshop{
+                height: 380vh;
+            }
+            #row-card{
+                transform: translateX(20%);
+                width: 50vh;
+            
+            }
+            
+          
+
+           
+            .hero2{
+                height: 160vh;
+            }
+            #footer p{
+                font-size: 15px;
+            }
+            .performance-highlight{
+                transform: translateX(-10%);
+            }
+            
+            }
+            @media (max-width: 430px) {
+                #About{
+                    height: 190vh;
+                }
+                #row-card{
+                    width: 39vh;
+                    
+
+                }
+                .card{
+            
+                    width: 30vh;
+                    height: 40vh;
+                }
+            }
+            
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Homepage.html"><img
+                    src="https://openhouse.bu.ac.th/_nuxt/logo_bu.B5Fc9ReW.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Speaker">Speaker</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Workshop">Workshop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center " id="Home"
+        style="background-image: url(''); background-size: cover; color: black;">
+        <div class="img-fluid">
+            <img src="helloworld-openhouse1.png" alt="Open House Image" class="img-fluid">
+
+        </div>
+    </section>
+    <section class="hero-section text-center " style="background-image: url(''); background-size: cover; color: black;">
+       
+        <div class="img-fluid">
+            <img src="helloworld-openhouse2.png" alt="Open House Image" class="img-fluid">
+
+        </div>
+    </section>
+    <section class="hero2 text-center" id="About"
+        style=" background-color:black; background-size: cover; padding: 100px 0;">
+        <div class="container  about-container">
+            <div class="performance-highlight">
+                <img src="highlight_header.YPPKmCnj.svg" class="shake" data-v-578cc193="" id="highlight_header">
+                <div class="bounce-container shake">
+                    <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span
+                        style="padding-right: 1rem;"> </span><span>I</span><span>T</span><span>I</span>
+                </div>
+            </div>
+            <div class="col text-white about-detail pt-5">
+                <h1>คณะเทคโนโลยีสารสนเทศและนวัตกรรม<br>มหาวิทยาลัยกรุงเทพ </h1>
+                <h3>ได้จัดตั้งขึ้นเมื่อปี พ.ศ. 2530 มีที่ทำการ ณ อาคาร 3 ชั้น 1 วิทยาเขตกล้วยน้ำไท และ อาคาร A4 ชั้น 2
+                    วิทยาเขตรังสิต คณะได้รับอนุญาตจากสำนักงานคณะกรรมการการอุดมศึกษา (สกอ.)
+                    ให้เปิดสอนในระดับปริญญาตรีหลักสูตรวิทยาศาสตรบัณฑิต
+                    จำนวน 3 หลักสูตรคือ
+                    <br><br>หลักสูตรวิทยาศาสตรบัณฑิตสาขาวิชาวิทยาการคอมพิวเตอร์(ภาคปกติ) เปิดดำเนินการปีการศึกษา 2530
+                    <br>หลักสูตรวิทยาศาสตรบัณฑิตสาขาวิชาเทคโนโลยีสารสนเทศ(ภาคปกติ) เปิดดำเนินการปีการศึกษา 2542
+                    <br>หลักสูตรวิทยาศาสตรบัณฑิตสาขาวิชาวิศวกรรมซอฟต์แวร์ (ภาคปกติ) เปิดดำเนินการปีการศึกษา 2547
+                    <br><br>ปีการศึกษา 2548 คณะเปิดหลักสูตรระดับวิทยาศาสตรมหาบัณฑิต 1 หลักสูตร คือ
+                    สาขาวิชาเทคโนโลยีสารสนเทศและการจัดการ (มี 2 แผน คือ แผน ก. ศึกษารายวิชาและทำวิทยานิพนธ์ และแผน ข.
+                    สอบประมวลความรอบรู้)
+                    <br><br>ปีการศึกษา 2548 - 2549
+                    คณะได้เพิ่มพูนทักษะทางวิชาการและวิชาชีพให้แก่นักศึกษาโดยจัดตั้งศูนย์บ่มเพาะนักพัฒนาซอฟต์แวร์
+                    ที่วิทยาเขตรังสิตเพื่อให้นักศึกษาชั้นปีที่ 1 และปีที่ 2
+                    ได้มีโอกาสเรียนรู้เทคโนโลยีที่ทันสมัยหลากหลายแขนงผ่านการอบรมสัมมนา
+                    และค้นพบศักยภาพของตนเองก่อนการเลือกเรียนตามสาขาที่ตนถนัด
+                    นอกจากนี้คณะได้จัดตั้งศูนย์นวัตกรรมและเทคโนโลยี มหาวิทยาลัยกรุงเทพ ที่วิทยาเขตกล้วยน้ำไท
+                    เพื่อเป็นแหล่งฝึกฝนความเชี่ยวชาญเฉพาะทางและสร้างสรรค์นวัตกรรมของนักศึกษาชั้นปีที่ 3 และปีที่ 4
+                    โดยคณะได้ร่วมมือกับบริษัทชั้นนำด้านเทคโนโลยีสารสนเทศจัดสอนหลักสูตรประกาศนียบัตรความเชี่ยวชาญทางวิชาชีพ
+                    และให้บริการทางวิชาการแก่สังคมด้วยการจัดอบรมสัมมนาด้านเทคโนโลยีสารสนเทศ
+                    <br><br>ปีการศึกษา 2555
+                    เพื่อการบริหารจัดการตามคำสั่งของมหาวิทยาลัยคณะได้รวมภาควิชาวิทยาการคอมพิวเตอร์
+                    และภาควิชาวิศวกรรมซอฟต์แวร์เข้าด้วยกันและกำหนดตำแหน่งการบริหารงานของภาควิชาขึ้นใหม่เป็นหัวหน้าภาควิชาวิทยาการคอมพิวเตอร์และวิศวกรรมซอฟต์แวร์
+                    <br><br> ปีการศึกษา 2559 คณะได้มีการเปลี่ยนชื่อเป็น คณะเทคโนโลยีสารสนเทศและนวัตกรรม โดยชื่อเดิมคือ
+                    คณะวิทยาศาสตร์และเทคโนโลยีสารสนเทศ
+                    <br><br>ปีการศึกษา 2560 คณะเปิดหลักสูตรระดับวิทยาศาสตรบัณฑิต สาขาวิชาเกมและสื่ออินเทอร์แอคทีฟ
+                    (Bachelor of Science Program in Games and Interactive Media)
+                    ซึ่งได้รับความร่วมมือกับบริษัทชั้นนำทางด้านเกมและสื่ออินเทอร์แอคทีฟในการพัฒนาหลักสูตรร่วมกัน
+                    คณะเปิดหลักสูตรระดับวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์
+                    มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์ Bachelor of Science (Computer Science)
+                </h3>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="hero2 text-center py-6 bg-black " id="Schedule"
+        style="background-color:black; background-size: cover; padding: 100px 0;">
+        <div class="container mt-5 schedule-container">
+            <h2 class="section-title text-center">
+                <div class="performance-highlight">
+                    <img src="highlight_header.YPPKmCnj.svg" class="shake" data-v-578cc193="" id="highlight_header">
+                    <div class="bounce-container shake text-black" id="schedule-header">
+                        <span>S</span><span>C</span><span>H</span><span>E</span><span>D</span><span>U</span><span>L</span><span>E</span>
+                    </div>
+                </div>
+            </h2>
+            <div class="table-responsive mt-5">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event Day 1</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 น. เป็นต้นไป</td>
+                            <td>เปิดให้ลงทะเบียนเข้างาน</td>
+                            <td>Main Hall</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 น.-18.00 น.</td>
+                            <td>Workshop เขียนโปรแกรมพื้นฐาน</td>
+                            <td>Room 203</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 น.- 18.00 น.</td>
+                            <td>Student Project Exhibition</td>
+                            <td>Main Hall</td>
+                        </tr>
+                        <tr>
+                            <td>13.00 น.- 15.00 น.</td>
+                            <td>การบรรยายพิเศษเกี่ยวกับเทรนด์เทคโนโลยี</td>
+                            <td>Room 101</td>
+                        </tr>
+                        <tr>
+                            <td>18.00 น.</td>
+                            <td>สิ้นสุดงาน</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered mt-5">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 น.เป็นต้นไป</td>
+                            <td>เปิดให้ลงทะเบียนเข้างาน</td>
+                            <td>Main Hall</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 น.-18.00 น.</td>
+                            <td>AR/VR Showcase</td>
+                            <td>Room 203</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 น.-18.00 น.</td>
+                            <td>Student Project Exhibition</td>
+                            <td>Room127</td>
+                        </tr>
+                        <tr>
+                            <td>13.00 น.- 15.00 น.</td>
+                            <td>การบรรยายพิเศษเกี่ยวกับเทรนด์เทคโนโลยี</td>
+                            <td>Room 101</td>
+                        </tr>
+                        <tr>
+                            <td>18.00 น.</td>
+                            <td>สิ้นสุดงาน</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="hero2 text-center py-6 bg-black " id="Speaker"
+        style="background-color:black; background-size: cover; padding: 100px 0;">
+        <div class="container mt-5 speaker-container-bounce">
+            <h2 class="section-title text-center">
+                <div class="performance-highlight">
+                    <img src="highlight_header.YPPKmCnj.svg" class="shake" data-v-578cc193="" id="highlight_header">
+                    <div class="bounce-container shake  speaker-header" id="schedule-header">
+                        <span>S</span><span>P</span><span>E</span><span>A</span><span>K</span><span>E</span><span>R</span>
+                    </div>
+                </div>
+            </h2>
+            <section class="py-5 bg-black">
+                <div class="container">
+                    <div class="row mt-6 d-flex speaker-container">
+                        <div class="col">
+                            <div class="speaker-img">
+                                <img src="2-home.jfif">
+                            </div>
+                        </div>
+                        <div class="col text-white speaker-detail pt-5">
+                            <h1>การบรรยายพิเศษเกี่ยวกับ<br>เทรนด์เทคโนโลยี</h1>
+                            <h3>ชวนมาหาคำตอบกับวิทยากรผู้เชี่ยวชาญ มาให้ความรู้เกี่ยวกับเทรนด์เทคโนโลยีล่าสุด เช่น AI,
+                                Blockchain, หรือ IoT
+                                เพื่อให้ผู้เข้าร่วมได้รู้จักกับเทคโนโลยีที่มีผลต่อโลกในปัจจุบันและอนาคต
+                                ช่วยจุดประกายแรงบันดาลใจในเส้นทางสายอาชีพด้านเทคโนโลยี พาน้อง ๆ
+                                ต่อยอดความชอบได้อย่างตรงจุด
+                            </h3>
+                        </div>
+
+
+
+
+
+
+                    </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="hero2 text-center" id="Workshop"
+        style="background-color:black; background-size: cover; padding: 100px 0;">
+        <div class="container mt-5 workshop-container-all">
+            <div class="performance-highlight">
+                <img src="highlight_header.YPPKmCnj.svg" class="shake" data-v-578cc193="" id="highlight_header">
+                <div class="bounce-container shake">
+                    <span>A</span><span>C</span><span>T</span><span>I</span><span>V</span><span>I</span><span>T</span><span>Y</span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5 gx-5 " id="row-card">
+
+                <!-- card1 -->
+                <div class="col-md-3 ">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <div class="card">
+                            <img src="1-home.jfif" class="card-img-top p-1" alt="Speaker 1">
+                            <div class="card-body  d-flex justify-content-center align-items-center">
+                                <h5 class="card-title">Workshop เขียนโปรแกรมพื้นฐาน </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content d-flex">
+                            <div class="modal-img">
+                                <img src="1-home.jfif">
+                            </div>
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">Workshop เขียนโปรแกรมพื้นฐาน</h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <p>สายเขียนโค้ดห้ามพลาด
+                                        กับกิจกรรมเวิร์กช็อปสำหรับผู้สนใจเริ่มต้นการเขียนโปรแกรม เช่น Python หรือ
+                                        JavaScript
+                                        โดยมีการสอนพื้นฐานและการเขียนโค้ดง่ายๆ เพื่อให้น้องๆได้ทดลองปฏิบัติจริง</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card2 -->
+
+                <div class="col-md-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <div class="card ">
+                            <img src="3-home.jfif" class="card-img-top p-1" alt="Speaker 2">
+                            <div class="card-body  d-flex justify-content-center align-items-center">
+                                <h5 class="card-title">AR/VR Showcase</h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content d-flex">
+                            <div class="modal-img">
+                                <img src="2-home.jfif">
+                            </div>
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">AR/VR Showcase</h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <p>ใครสนใจAR/VRมาทางนี้ ชวนน้องๆสามารถมาทดลองใช้งานเทคโนโลยีเสมือนจริง
+                                        (VR) หรือเทคโนโลยีเสริมโลกจริง (AR)
+                                        โดยน้องๆจะได้ลองสัมผัสประสบการณ์แบบอินเตอร์แอคทีฟกับนวัตกรรมที่ทันสมัยด้วยตัวเอง
+                                        <br>การบรรยายพิเศษเกี่ยวกับเทรนด์เทคโนโลยี <br>คณะเทคโนโลยีสารสนเทศและนวัตกรรม
+                                        เชิญวิทยากรผู้เชี่ยวชาญมาให้ความรู้เกี่ยวกับเทรนด์เทคโนโลยีล่าสุด เช่น AI,
+                                        Blockchain,
+                                        หรือ IoT เพื่อให้ผู้เข้าร่วมได้รู้จักกับเทคโนโลยีที่มีผลต่อโลกในปัจจุบันและอนาคต
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card4 -->
+                <div class="col-md-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        <div class="card">
+                            <img src="4-home.jfif" class="card-img-top p-1" alt="Speaker 2">
+                            <div class="card-body  d-flex justify-content-center align-items-center">
+                                <h5 class="card-title">Student Project Exhibition</h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content d-flex">
+                            <div class="modal-img">
+                                <img src="4-home.jfif">
+                            </div>
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">Student Project Exhibition</h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <p>จัดแสดงโครงงานของพี่ๆนักศึกษาที่ได้รับรางวัลหรือโปรเจ็คที่น่าสนใจ
+                                        <br>เพื่อให้น้องๆได้เห็นผลงานจริงของพี่ๆนักศึกษา
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card5 -->
+                <div class="col-md-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        <div class="card">
+                            <img src="5-home.jfif" class="card-img-top p-1" alt="Speaker 3">
+                            <div class="card-body  d-flex justify-content-center align-items-center">
+                                <h5 class="card-title">Cybersecurity Defense Workshop
+                                </h5>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <div class="modal-content d-flex">
+                            <div class="modal-img">
+                                <img src="5-home.jfif">
+                            </div>
+                            <div class="modal-detail">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cybersecurity Defense Workshop</h5>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <p>พาน้องๆสายไอที มารู้จักกับเรื่องความปลอดภัยทางไซเบอร์
+                                        การสอนเทคนิคพื้นฐานในการป้องกันการโจมตีทางไซเบอร์ เช่น การตั้งค่าไฟร์วอลล์
+                                        การป้องกันมัลแวร์ และการจัดการความปลอดภัยของข้อมูล
+                                        น้องๆที่อยากรู้อยากลองจะได้ฝึกปฏิบัติจริงในการป้องกันภัยคุกคามต่างๆ</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="py-2 mt-0  d-flex justify-content-between" id="container-footer">
+        <div class="container text-center text-black mt-4" id="footer">
+            <p>© 2024 Bangkok University Open House. All rights reserved.</p>
+        </div>
+        <div class="footer-iconTop text-white">
+            <button onclick="scrollToTop()" id="toTopBtn">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                document.getElementById("toTopBtn").style.display = "block";
+            } else {
+                document.getElementById("toTopBtn").style.display = "none";
+            }
+        }
+        function scrollToTop() {
+            document.body.scrollTop = 0; // สำหรับ Safari
+            document.documentElement.scrollTop = 0; // สำหรับ Chrome, Firefox, IE และ Opera
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
